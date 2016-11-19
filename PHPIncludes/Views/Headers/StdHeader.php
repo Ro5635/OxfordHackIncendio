@@ -1,4 +1,5 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+  <html>
   <head>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +14,7 @@
 
     if(isset($cssFiles)){
     	foreach($cssFiles as  $fileName) {
-   			echo '<link rel="stylesheet" type="text/css" href="/SASS/stylesheets/' .  $fileName .  '">'; 		
+   			echo '<link rel="stylesheet" type="text/css" href="' .  $fileName .  '">'; 		
        	}
     }
 
