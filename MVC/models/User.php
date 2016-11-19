@@ -35,6 +35,10 @@ class User {
 
 		//Rand house ID between 1 and 4.
 		$HouseID = rand(1, 4);
+
+		$Score = 0;
+
+		$Health = 3;
 			
 		//Get the database
 		$db = Db::getInstance();
