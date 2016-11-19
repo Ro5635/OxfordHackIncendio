@@ -15,7 +15,7 @@
 
       $pageRequirements->add("css", ['CSSFIleName.css', 'Animate.css']);
 
-      $pageRequirements->add("title", 'Page title');
+      $pageRequirements->add("title", 'Incendio');
 
       $pageRequirements->add("js", ['assets/JS/js.js']);
 
