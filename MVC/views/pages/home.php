@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/../PHPIncludes/Views/pages/home/INC_TopPageG
 
 ?>
 <div class="jumbotron text-center">
-            <img src="https://cdn.webaddressgoeshere.com/OxfordHack/media/PlayLogo.png">
+            <img class="img-fluid" src="intrologo.png">
         </div>
         <div class="container-fluid">
             <div class="row">
