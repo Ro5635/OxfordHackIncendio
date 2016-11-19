@@ -8,7 +8,7 @@ $(document).ready(function(){
             data: datatoTransmit,
             cache: false,
             success: function(reternedData) {
-                window.location.replaec("http://stackoverflow.com");
+                window.location.replace("http://stackoverflow.com");
             }
         });
     });
