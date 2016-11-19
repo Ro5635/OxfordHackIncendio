@@ -25,10 +25,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/../PHPIncludes/Views/pages/home/INC_TopPageG
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Your name" id="playerName"/> 
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button" onclick="submitName()" id="submitButton">Begin.</button>
+                            <button class="btn btn-default" type="button" id="submitButton">Begin.</button>
                         </span>
                     </div><!-- /input-group -->
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
         </div>
-        <!-- jQuery library -
