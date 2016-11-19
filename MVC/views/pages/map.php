@@ -9,3 +9,5 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreetin
 
 
 ?>
+
+This is the map page
