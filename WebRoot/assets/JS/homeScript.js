@@ -8,10 +8,8 @@ $(document).ready(function(){
             data: datatoTransmit,
             cache: false,
             success: function(reternedData) {
-                //Call back
-                //Reload page? redirect?.....?
+                window.location.replaec("http://stackoverflow.com");
             }
         });
     });
 });
-
