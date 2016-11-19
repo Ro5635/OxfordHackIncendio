@@ -1,6 +1,7 @@
-document.getElementById("submitButton").onclick = function() {submitName();
-    function submitName(){
-        var playerName = document.getElementById('playerName').value
-         console.log(playerName);
-    }
-}
+$(document).ready(function(){
+    $('#submitButton').click(function() {
+        var playerName = $('#playerName').value;
+        console.log(playerName)
+    });
+});
+
