@@ -11,10 +11,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/../PHPIncludes/Views/pages/home/INC_TopPageG
 
 ?>
 
-<div id="ElaborationsWrapper"><section id="Elaborations">
-
-</article>
 
 
-</section></div>
-
+<!-- YOUR PAGE HERE!! -->
