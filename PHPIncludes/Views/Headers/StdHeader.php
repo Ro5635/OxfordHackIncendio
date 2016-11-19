@@ -17,6 +17,10 @@
    			echo '<link rel="stylesheet" type="text/css" href="/SASS/stylesheets/' .  $fileName .  '">'; 		
        	}
     }
+
+    //bootstrap
+    echo ' <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" cossorigin="anonymous">';
+
     
     //Echo out the page title if it is set
     if(isset($pageTitle) && $pageTitle != ""){
