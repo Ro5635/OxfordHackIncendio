@@ -35,6 +35,10 @@ class User {
 
 		//Rand house ID between 1 and 4.
 		$HouseID = rand(1, 4);
+
+		$Score = 0;
+
+		$Health = 3;
 			
 		//Get the database
 		$db = Db::getInstance();
@@ -83,7 +87,7 @@ class User {
 		$req = $db->prepare('INSERT INTO Users(ID, Name, GameID, HouseID, Score, Health) VALUES( :ID, :Name , :GameID, :HouseID, :Score , :Health)');
    		//Execute prepeared Query
 		$req->execute(array(':ID' => $UserID, ':Name' => $Name, ':GameID' => $GameID , ':HouseID' => $HouseID, ':Score' => $Score , ':Health' => $Health));
-		$User = $req->fetch();
+ 
 
 
 		return new User($UserID, $Name, $GameID, $House , $Life);
