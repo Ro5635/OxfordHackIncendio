@@ -10,7 +10,17 @@ include($_SERVER['DOCUMENT_ROOT'].'/../PHPIncludes/Views/pages/home/INC_TopPageG
 
 
 ?>
-
+<div class="jumbotron text-center">
+            <img src="https://cdn.webaddressgoeshere.com/OxfordHack/media/PlayLogo.png">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center">
+                    <input id="playerName" type="text">
+                    <button type="submit">Begin.</button>
+                    </div>
+            </div>
+        </div>
 
 
 <!-- YOUR PAGE HERE!! -->
