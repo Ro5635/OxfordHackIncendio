@@ -60,8 +60,8 @@ class User {
 			//Check to see that the index is not in use:
 			$db = Db::getInstance();
 
-			$req = $db->prepare('SELECT * FROM Users Where UserID = :UserID limit 5');
-			$req->execute(array(':UserID' => $randomNumber));
+			$req = $db->prepare('SELECT * FROM Users Where ID = :ID limit 5');
+			$req->execute(array(':ID' => $randomNumber));
 			$Usersfound = $req->fetchAll();
 
 			$attemps++;
