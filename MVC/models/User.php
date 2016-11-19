@@ -21,17 +21,12 @@ class User {
 		$this->House = $House;
 		$this->Life = $Life;
 		
-
 	}
 
 
 	//Registers User
 	//Requires the user name of the user to be registered
 	public static function registerUser($UserName ) {
-
-
-
-
 
 		$Name = filter_var($UserName , FILTER_SANITIZE_STRING);
 
@@ -89,6 +84,9 @@ class User {
    		//Execute prepeared Query
 		$req->execute(array(':ID' => $UserID, ':Name' => $Name, ':GameID' => $GameID , ':HouseID' => $HouseID, ':Score' => $Score , ':Health' => $Health));
 		$User = $req->fetch();
+
+
+		return new User($UserID, $Name, $GameID, $House , $Life);
 
 
 	}
