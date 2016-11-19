@@ -83,7 +83,7 @@ class User {
 		$req = $db->prepare('INSERT INTO Users(ID, Name, GameID, HouseID, Score, Health) VALUES( :ID, :Name , :GameID, :HouseID, :Score , :Health)');
    		//Execute prepeared Query
 		$req->execute(array(':ID' => $UserID, ':Name' => $Name, ':GameID' => $GameID , ':HouseID' => $HouseID, ':Score' => $Score , ':Health' => $Health));
-		$User = $req->fetch();
+ 
 
 
 		return new User($UserID, $Name, $GameID, $House , $Life);
