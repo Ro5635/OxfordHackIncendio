@@ -17,7 +17,7 @@
 
       $pageRequirements->add("title", 'Incendio');
 
-      $pageRequirements->add("js", ['assets/JS/js.js']);
+      $pageRequirements->add("js", ['assets/JS/js.js'], ['assets/JS/homeScript.js'] );
 
 
 
