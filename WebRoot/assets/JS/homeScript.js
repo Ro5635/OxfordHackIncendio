@@ -4,4 +4,3 @@ $(document).ready(function(){
         console.log(playerName)
     });
 });
-

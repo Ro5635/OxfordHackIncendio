@@ -10,22 +10,25 @@ include($_SERVER['DOCUMENT_ROOT'].'/../PHPIncludes/Views/pages/home/INC_TopPageG
 
 
 ?>
-<div class='container' style='background-image:url("http://media.harrypotter.bloomsbury.com/rep/g/page-background-shell%20-%202.png")'>
+        <div class='container'>
             <div class="row">
                 <div class="container-fluid">
-                    <div class = "col-xs-2"></div>
-                    <img class="img-fluid" src="https://cdn.webaddressgoeshere.com/OxfordHack/media/PlayLogo.png">
-                    <div class= "col-xs-2"></div>
+                    <div class = "col-xs-3"></div>
+                    <div class = "col-xs-6">
+                        <img class="img-fluid" src="https://cdn.webaddressgoeshere.com/OxfordHack/media/PlayLogo.png">
+                    </div>
+                    <div class= "col-xs-3"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Your name" /> 
+                        <input type="text" class="form-control" placeholder="Your name" id="playerName"/> 
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Begin.</button>
+                            <button class="btn btn-default" type="button" onclick="submitName()" id="submitButton">Begin.</button>
                         </span>
                     </div><!-- /input-group -->
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
         </div>
+        <!-- jQuery library -
