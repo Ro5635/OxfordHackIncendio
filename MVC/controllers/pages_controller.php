@@ -13,7 +13,7 @@
       //Make an object of the pageLinkScriptsCSS class for storing the CSS requirements for the header:
       $pageRequirements = new pageLinkScriptsCSS();
 
-      $pageRequirements->add("css", ['CSSFIleName.css', 'Animate.css']);
+      $pageRequirements->add("css", ['/SASS/stylesheets/CSSFIleName.css', '/SASS/stylesheets/Animate.css']);
 
       $pageRequirements->add("title", 'Incendio');
 
@@ -31,6 +31,33 @@
 
     }
 
+
+     public function map() {
+
+      //Require the class for storing CSS and Script requirements:
+      require_once($_SERVER['DOCUMENT_ROOT'] . '../PHPIncludes/pageLinkScriptsCSS.php');
+
+      //Make an object of the pageLinkScriptsCSS class for storing the CSS requirements for the header:
+      $pageRequirements = new pageLinkScriptsCSS();
+
+      $pageRequirements->add("css", ['/SASS/stylesheets/CSSFIleName.css', '/SASS/stylesheets/Animate.css']);
+
+      $pageRequirements->add("title", 'Map');
+
+      $pageRequirements->add("js", ['assets/JS/js.js', 'assets/JS/jsMap.js', 'https://js.arcgis.com/4.1/'] );
+
+
+
+      callStructural('header','std',$pageRequirements);
+      
+      require_once('views/pages/map.php');
+
+      //Render the page footer:
+      callStructural("footer", 'std', $pageRequirements); 
+
+
+    }
+
     public function error() {
 
       //Require the class for storing CSS and Script requirements:
@@ -38,7 +65,7 @@
 
       $pageRequirements = new pageLinkScriptsCSS();
 
-      $pageRequirements->add("css", ['error.css']);
+      $pageRequirements->add("css", ['/SASS/stylesheets/error.css']);
 
       $pageRequirements->add("title", 'The Sky Is falling');
 

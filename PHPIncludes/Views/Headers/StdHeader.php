@@ -13,7 +13,7 @@
 
     if(isset($cssFiles)){
     	foreach($cssFiles as  $fileName) {
-   			echo '<link rel="stylesheet" type="text/css" href="/SASS/stylesheets/' .  $fileName .  '">'; 		
+   			echo '<link rel="stylesheet" type="text/css" href="' .  $fileName .  '">'; 		
        	}
     }
 
