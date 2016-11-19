@@ -1,11 +1,11 @@
 <?php
   class ajaxController {
-    public function videoboxcontents() {
+    public function register() {
 
     //Include for example:
     //Render the appropiate video box:
 
-      require_once('views/ajax/videoboxcontents/index.php');
+      require_once('views/ajax/RegisterUser.php');
     
 
     }
