@@ -1,4 +1,4 @@
-require([
+var test = require([
         "esri/Map",
         "esri/views/SceneView",
         "esri/layers/TileLayer",  // Require the TileLayer module
