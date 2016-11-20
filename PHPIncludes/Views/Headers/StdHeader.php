@@ -20,7 +20,7 @@
 
     //bootstrap
     echo ' <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" cossorigin="anonymous">';
-
+    echo '<script src="https://js.pusher.com/3.2/pusher.min.js"></script>';
     
     //Echo out the page title if it is set
     if(isset($pageTitle) && $pageTitle != ""){
