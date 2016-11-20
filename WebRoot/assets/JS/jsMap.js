@@ -20,7 +20,8 @@ var test = require([
         // Create the SceneView
         var view = new SceneView({
             container: "viewDiv",
-            map: map
+            map: map,
+            layers: [roomLyr]
         });
 
 
