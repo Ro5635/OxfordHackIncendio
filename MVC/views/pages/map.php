@@ -1,13 +1,5 @@
 <?php
 
-// Include the experimental html tag functions
-include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php');
-
-// echo '<body>';
-
-// include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreeting.php');
-
-
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +25,7 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php
 
   <script>
     require([
-          "esri/widgets/Track",
+        "esri/widgets/Track",
         "esri/Map",
         "esri/views/MapView",
         "esri/layers/FeatureLayer",
