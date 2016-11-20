@@ -63,11 +63,8 @@
      var track = new Track({
         view: view
       });
-     var symbol = new SimpleMarkerSymbol(
-});
       view.ui.add(track, "top-left");
       map.add(featureLayer);
-	map.add(symbol);
 
       view.then(function() {
         track.start();
