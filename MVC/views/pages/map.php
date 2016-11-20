@@ -32,8 +32,7 @@
  </style>
 
  <script>
-    $.ajax({
-            
+    $(document).ready(function(){$.ajax({
 	url: "/ajax/getPlayers",
             type: "POST",
             data: datatoTransmit,
@@ -42,6 +41,7 @@
                 alert("Players:"+datatoTransmit);
             }
         });
+    });
  
    require([
          "esri/widgets/Track",
