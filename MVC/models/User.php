@@ -104,7 +104,7 @@ class User {
 		//Get all of the players for the current game ID:
 		
 		$req = $db->prepare(' SELECT * FROM Users WHERE GameID = :GameID');
-   		$req->execute(array(':GameID' => $gameID ));
+   		$req->execute(array(':GameID' => $gameID));
    		$CurrentUsers = $req->fetchAll();
 
    		return json_encode($CurrentUsers);
