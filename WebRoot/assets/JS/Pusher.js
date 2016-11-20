@@ -8,7 +8,7 @@
 	$.ajax({
             url: "https://oxfordhack.webaddressgoeshere.com/ajax/getCurrentPlayer",
             type: "POST",
-            data: datatoTransmit,
+            data: '',
             cache: false,
             success: function(reternedData) {
                 
