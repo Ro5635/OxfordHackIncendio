@@ -1,7 +1,7 @@
 <?php
 
 // Include the experimental html tag functions
-// include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php');
+include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php');
 
 // echo '<body>';
 
