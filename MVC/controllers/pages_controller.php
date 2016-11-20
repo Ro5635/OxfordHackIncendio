@@ -33,6 +33,7 @@
 
 
      public function map() {
+      
 
       //Require the class for storing CSS and Script requirements:
      require_once($_SERVER['DOCUMENT_ROOT'] . '../PHPIncludes/pageLinkScriptsCSS.php');
