@@ -88,9 +88,10 @@ class User {
    		//Execute prepeared Query
 		$req->execute(array(':ID' => $UserID, ':Name' => $Name, ':GameID' => $GameID , ':HouseID' => $HouseID, ':Score' => $Score , ':Health' => $Health));
  
+ 		
 
 
-		return new User($UserID, $Name, $GameID, $House , $Life);
+		return new User($UserID, $Name, $GameID, $HouseID , $Life);
 
 
 	}
