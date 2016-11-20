@@ -68,7 +68,6 @@
            ymax: 4247784,
            spatialReference: 102100
          });
-       });
 
        /********************
         * Add feature layer
