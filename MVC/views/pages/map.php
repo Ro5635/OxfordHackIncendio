@@ -1,11 +1,11 @@
 <?php
 
 // Include the experimental html tag functions
-include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php');
+// include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php');
 
-echo '<body>';
+// echo '<body>';
 
-include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreeting.php');
+// include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreeting.php');
 
 
 ?>
@@ -19,7 +19,7 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreetin
   <title>FeatureLayer - 4.1</title>
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.1/esri/css/main.css">
-  <script src="https://js.arcgis.com/4.1/"></script>
+  <script src="https://js.arcgis.com/4.1"></script>
 
   <style>
     html,
