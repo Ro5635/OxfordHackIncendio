@@ -102,7 +102,10 @@ class User {
 		$gameID = Game::getCurrentGame();
 
 		//Get all of the players for the current game ID:
-		
+		//Get the database
+		$db = Db::getInstance();
+
+
 		$req = $db->prepare(' SELECT * FROM Users WHERE GameID = :GameID');
    		$req->execute(array(':GameID' => $gameID));
    		$CurrentUsers = $req->fetchAll();
