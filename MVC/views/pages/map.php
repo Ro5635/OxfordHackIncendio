@@ -13,7 +13,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>FeatureLayer - 4.1</title>
@@ -46,46 +45,6 @@
         Track, Map, MapView,
         FeatureLayer
       ) {
-=======
-	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>FeatureLayer - 4.1</title>
-
-	<link rel="stylesheet" href="https://js.arcgis.com/4.1/esri/css/main.css">
-	<script src="https://js.arcgis.com/4.1"></script>
-
-	<style>
-	html,
-	body,
-	#viewDiv {
-		padding: 0;
-		margin: 0;
-		height: 100%;
-		width: 100%;
-	}
-	</style>
-
-	<script>
-	require([
-		"esri/Map",
-		"esri/views/MapView",
-
-		"esri/layers/FeatureLayer",
-
-		"dojo/domReady!"
-		],
-		function(
-			Map, MapView,
-			FeatureLayer
-			) {
-
-
-        // Carbon storage of trees in Warren Wilson College.
-        var featureLayer = new FeatureLayer({
-        	url: "http://services.arcgis.com/Qo2anKIAMzIEkIJB/arcgis/rest/services/OxfordHackCampusDraft1/FeatureServer/0"
-        });
-
->>>>>>> 29bc2f9d614b4771f92ece06255f85d8c7b7ddb4
 
 
         var featureLayer = new FeatureLayer({
@@ -94,27 +53,26 @@
 
 
         var map = new Map({
-        	basemap: "streets"
+          basemap: "streets"
         });
 
         var view = new MapView({
-        	container: "viewDiv",
-        	map: map,
+          container: "viewDiv",
+          map: map,
 
           extent: { // autocasts as new Extent()
-          	xmin: -9177811,
-          	ymin: 4247000,
-          	xmax: -9176791,
-          	ymax: 4247784,
-          	spatialReference: 102100
+            xmin: -9177811,
+            ymin: 4247000,
+            xmax: -9176791,
+            ymax: 4247784,
+            spatialReference: 102100
           }
-      });
+        });
 
         /********************
          * Add feature layer
          ********************/
 
-<<<<<<< HEAD
         // Carbon storage of trees in Warren Wilson College.
      var track = new Track({
         view: view
@@ -126,19 +84,13 @@
       view.then(function() {
         track.start();
       });
-=======
 
->>>>>>> 29bc2f9d614b4771f92ece06255f85d8c7b7ddb4
-
-         map.add(featureLayer);
-
-     });
-	</script>
-	 <script src="https://js.pusher.com/3.2/pusher.min.js"></script>
+      });
+  </script>
 </head>
 
 <body>
-	<div id="viewDiv"></div>
+  <div id="viewDiv"></div>
 </body>
 
 </html>
