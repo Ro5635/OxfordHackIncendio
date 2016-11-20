@@ -39,7 +39,7 @@ class User {
 		$Score = 0;
 
 		$Health = 3;
-			
+
 		//Get the database
 		$db = Db::getInstance();
 
@@ -78,17 +78,17 @@ class User {
 		//Get the GameID:
 		//This is stored in the table CurrentGame
 		$req = $db->prepare(' SELECT * FROM CurrentGame');
-   		$req->execute();
-   		$CurrentGame = $req->fetch();
+		$req->execute();
+		$CurrentGame = $req->fetch();
 
-   		$GameID = $CurrentGame['CurrentGameID'];
+		$GameID = $CurrentGame['CurrentGameID'];
 
 
 		$req = $db->prepare('INSERT INTO Users(ID, Name, GameID, HouseID, Score, Health) VALUES( :ID, :Name , :GameID, :HouseID, :Score , :Health)');
    		//Execute prepeared Query
 		$req->execute(array(':ID' => $UserID, ':Name' => $Name, ':GameID' => $GameID , ':HouseID' => $HouseID, ':Score' => $Score , ':Health' => $Health));
- 
- 		
+
+
 
 
 		return new User($UserID, $Name, $GameID, $HouseID , $Life);
@@ -107,10 +107,52 @@ class User {
 
 
 		$req = $db->prepare(' SELECT * FROM Users WHERE GameID = :GameID');
-   		$req->execute(array(':GameID' => $gameID));
-   		$CurrentUsers = $req->fetchAll();
+		$req->execute(array(':GameID' => $gameID));
+		$CurrentUsers = $req->fetchAll();
 
-   		return json_encode($CurrentUsers);
+		return json_encode($CurrentUsers);
+
+
+	}
+
+
+	public static function getUser($userID){
+		//Get the database
+		$db = Db::getInstance();
+
+
+		$req = $db->prepare(' SELECT * FROM Users WHERE ID = :ID');
+		$req->execute(array(':ID' => $userID));
+		$userDB = $req->fetch();
+
+		return new User($userDB['ID'], $userDB['Name'], $userDB['GameID'], $userDB['HouseID'] , $userDB['Life']);
+
+
+	}
+
+	public function decreaseUserLife($userID,$amountDown){
+
+		$db = Db::getInstance();
+
+
+		$req = $db->prepare('select * from Users Where ID = :UserID');
+		$req->execute(array(':UserID' => $userID));
+		$UserData = $req->fetch();
+
+		$user = User::getUser($userID);
+
+		$newLife = $user->Health - $amountDown;
+
+				//Check that it is not less than or equal to zero
+		if($newLife <= 0){
+
+			//kill the user!
+		}
+
+		//save change
+		$req = $db->prepare('UPDATE Users SET Health = :newValue WHERE ID = :ID');
+		$req->execute(array(':ID' => $userID, ':newValue' => $newLife));
+
 
 
 	}
