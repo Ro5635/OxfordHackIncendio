@@ -32,6 +32,10 @@
  </style>
 
  <script>
+    $.get("https://oxfordhack.webaddressgoeshere.com/ajax/getPlayers", function(data, status){
+      alert("Data: "+data+"\nStatus: "+status);
+    });
+ 
    require([
          "esri/widgets/Track",
        "esri/Map",
@@ -91,6 +95,12 @@
 
 <body>
  <div id="viewDiv"></div>
+ <div id="listOfPlayers">
+    <ul>
+      <li></li>
+    </ul>
+ </div>
+ 
 </body>
 
 </html>
