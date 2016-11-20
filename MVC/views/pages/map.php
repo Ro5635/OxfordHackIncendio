@@ -33,7 +33,7 @@
 
  <script>
     $(document).ready(function(){$.ajax({
-	url: "/ajax/getPlayers",
+	url: "https://oxfordhack.webaddressgoeshere.com/ajax/getPlayers",
             type: "POST",
             data: datatoTransmit,
             cache: false,
