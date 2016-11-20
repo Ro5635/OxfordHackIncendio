@@ -8,7 +8,7 @@ $(document).ready(function(){
             data: datatoTransmit,
             cache: false,
             success: function(reternedData) {
-                window.location.replace("/pages/map");
+                window.location.href("/pages/map");
             }
         });
     });
