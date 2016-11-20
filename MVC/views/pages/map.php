@@ -46,8 +46,6 @@
        Track, Map, MapView,
        FeatureLayer
      ) {
-
-
        var featureLayer = new FeatureLayer({
          url: "http://services.arcgis.com/Qo2anKIAMzIEkIJB/arcgis/rest/services/OxfordHackCampusDraft1/FeatureServer/0"
        });
@@ -84,8 +82,7 @@
      view.then(function() {
        track.start();
      });
-
-     });
+     }});
  </script>
 </head>
 
