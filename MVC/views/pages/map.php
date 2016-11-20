@@ -10,7 +10,6 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreetin
 
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,6 +33,7 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreetin
 
   <script>
     require([
+          "esri/widgets/Track",
         "esri/Map",
         "esri/views/MapView",
 
@@ -42,9 +42,15 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreetin
         "dojo/domReady!"
       ],
       function(
-        Map, MapView,
+        Track, Map, MapView,
         FeatureLayer
       ) {
+
+
+        var featureLayer = new FeatureLayer({
+          url: "http://services.arcgis.com/Qo2anKIAMzIEkIJB/arcgis/rest/services/OxfordHackCampusDraft1/FeatureServer/0"
+        });
+
 
         var map = new Map({
           basemap: "streets"
@@ -68,11 +74,16 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreetin
          ********************/
 
         // Carbon storage of trees in Warren Wilson College.
-        var featureLayer = new FeatureLayer({
-          url: "http://services.arcgis.com/Qo2anKIAMzIEkIJB/arcgis/rest/services/OxfordHackCampusDraft1/FeatureServer/0"
-        });
+     var track = new Track({
+        view: view
+      });
 
-        map.add(featureLayer);
+      view.ui.add(track, "top-left");
+      map.add(featureLayer);
+
+      view.then(function() {
+        track.start();
+      });
 
       });
   </script>
