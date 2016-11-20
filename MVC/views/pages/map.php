@@ -32,16 +32,6 @@
  </style>
 
  <script>
-    function() {$.ajax({
-	url: "https://oxfordhack.webaddressgoeshere.com/ajax/getPlayers",
-            type: "POST",
-            data: datatoTransmit,
-            cache: false,
-            success: function(reternedData) {
-                alert("Players:"+datatoTransmit);
-            }
-        });
-	};
 
    require([
          "esri/widgets/Track",
@@ -77,8 +67,7 @@
            xmax: -9176791,
            ymax: 4247784,
            spatialReference: 102100
-         }
-       });
+         });
 
        /********************
         * Add feature layer
