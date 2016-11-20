@@ -1,24 +1,7 @@
-<?php
-
-// Include the experimental html tag functions
-// include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php');
-
-// echo '<body>';
-
-// include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesViewspageshomeINC_TopPageGreeting.php');
 
 
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>FeatureLayer - 4.1</title>
-
-  <link rel="stylesheet" href="https://js.arcgis.com/4.1/esri/css/main.css">
-  <script src="https://js.arcgis.com/4.1/"></script>
+  <!-- <link rel="stylesheet" href="https://js.arcgis.com/4.1/esri/css/main.css"> -->
+  <!--  <script src="https://js.arcgis.com/4.1/"></script> -->
 
   <style>
     html,
@@ -33,10 +16,9 @@
 
   <script>
     require([
-          "esri/widgets/Track",
+        "esri/widgets/Track",
         "esri/Map",
         "esri/views/MapView",
-
         "esri/layers/FeatureLayer",
 
         "dojo/domReady!"
@@ -55,7 +37,11 @@
         var map = new Map({
           basemap: "streets"
         });
-
+	
+	function addPlayerPoint(){
+		var symbol = new SimpleMarkerSymbol();
+		markerSybol.setPath
+		
         var view = new MapView({
           container: "viewDiv",
           map: map,
@@ -77,9 +63,11 @@
      var track = new Track({
         view: view
       });
-
+     var symbol = new SimpleMarkerSymbol(
+});
       view.ui.add(track, "top-left");
       map.add(featureLayer);
+	map.add(symbol);
 
       view.then(function() {
         track.start();

@@ -6,7 +6,6 @@ var test = require([
     ],
     function(Map, SceneView, TileLayer) {
 
-
         var roomLyr = new TileLayer({
             url: "http://services.arcgis.com/Qo2anKIAMzIEkIJB/arcgis/rest/services/OxfordHackCampusDraft1/FeatureServer/0",
             id: "hackSpot"
@@ -30,11 +29,6 @@ var test = require([
         roomLyr.then(function() {
             view.goTo(roomLyr.fullExtent);
         });
-
-
-
-
-
 
         /*****************************************************************
          * The code to create a map and view instance in the previous step
