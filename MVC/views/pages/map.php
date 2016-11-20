@@ -98,7 +98,7 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php
 });
       view.ui.add(track, "top-left");
       map.add(featureLayer);
-	view.ui.add(symbol);
+	map.add(symbol);
 
       view.then(function() {
         track.start();
