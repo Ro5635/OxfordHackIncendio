@@ -36,13 +36,13 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php
           "esri/widgets/Track",
         "esri/Map",
         "esri/views/MapView",
-
+	"esri/symbols/SimpleMarkerSymbol",
         "esri/layers/FeatureLayer",
 
         "dojo/domReady!"
       ],
       function(
-        Track, Map, MapView,
+        Track, Map, MapView,SimpleMarkerSymbol,
         FeatureLayer
       ) {
 
