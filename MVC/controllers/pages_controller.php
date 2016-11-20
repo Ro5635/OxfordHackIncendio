@@ -44,7 +44,7 @@
 
       $pageRequirements->add("title", 'Map');
 
-      $pageRequirements->add("js", ['assets/JS/js.js', 'assets/JS/jsMap.js', 'https://js.arcgis.com/4.1/', 'https://ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js'] );
+      $pageRequirements->add("js", ['https://js.arcgis.com/4.1/', 'https://ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js', 'assets/JS/js.js', 'assets/JS/jsMap.js'] );
 
 
 
