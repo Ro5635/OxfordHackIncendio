@@ -33,13 +33,13 @@
 
  <script>
     $.ajax({
-            url: "/ajax/getPlayers",
+            
+	url: "/ajax/getPlayers",
             type: "POST",
             data: datatoTransmit,
             cache: false,
             success: function(reternedData) {
-                //Call back
-                //Reload page? redirect?.....?
+                alert("Players:"+datatoTransmit);
             }
         });
  
