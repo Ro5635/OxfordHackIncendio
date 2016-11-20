@@ -65,6 +65,7 @@
            xmax: -9176791,
            ymax: 4247784,
            spatialReference: 102100
+           }
          });
 
        /********************
@@ -82,7 +83,7 @@
      view.then(function() {
        track.start();
      });
-     }});
+  }});
  </script>
 </head>
 
