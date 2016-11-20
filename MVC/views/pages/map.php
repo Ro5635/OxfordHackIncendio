@@ -41,6 +41,7 @@
 	function addPlayerPoint(){
 		var symbol = new SimpleMarkerSymbol();
 		markerSybol.setPath
+	}
 		
         var view = new MapView({
           container: "viewDiv",
@@ -63,12 +64,14 @@
      var track = new Track({
         view: view
       });
+
       view.ui.add(track, "top-left");
       map.add(featureLayer);
 
       view.then(function() {
         track.start();
       });
+});
   </script>
 </head>
 
