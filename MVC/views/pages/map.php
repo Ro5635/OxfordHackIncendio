@@ -32,16 +32,6 @@
  </style>
 
  <script>
-    function() {$.ajax({
-	url: "https://oxfordhack.webaddressgoeshere.com/ajax/getPlayers",
-            type: "POST",
-            data: datatoTransmit,
-            cache: false,
-            success: function(reternedData) {
-                alert("Players:"+datatoTransmit);
-            }
-        });
-	};
 
    require([
          "esri/widgets/Track",
