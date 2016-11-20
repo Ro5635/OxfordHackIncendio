@@ -60,7 +60,8 @@ class Game {
 
 		//Update the database:
 		$req = $db->prepare('UPDATE CurrentGame SET CurrentGame = :CurrentGame');
-   		$req->execute(array(':CurrentGame' => $CurrentGame ););
+   		$req->execute(array(':CurrentGame' => $CurrentGame ));
+
 
 
 	}
