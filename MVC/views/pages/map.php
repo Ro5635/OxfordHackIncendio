@@ -69,8 +69,6 @@
       view.then(function() {
         track.start();
       });
-
-      });
   </script>
 </head>
 
