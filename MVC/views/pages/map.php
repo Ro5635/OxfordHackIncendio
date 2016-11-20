@@ -32,7 +32,7 @@
  </style>
 
  <script>
-    $.get("/ajax/getPlayers", function(data){
+    $.get("getPlayers", function(data){
       alert("Data: "+data);
     });
  
