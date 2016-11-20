@@ -55,7 +55,11 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php
         var map = new Map({
           basemap: "streets"
         });
-
+	
+	function addPlayerPoint(){
+		var symbol = new SimpleMarkerSymbol();
+		markerSybol.setPath
+		
         var view = new MapView({
           container: "viewDiv",
           map: map,
@@ -77,9 +81,24 @@ include($_SERVER['DOCUMENT_ROOT'].'..PHPIncludesLibrariesHTMLTagExperimental.php
      var track = new Track({
         view: view
       });
-
+     var symbol = new SimpleMarkerSymbol({
+  "color": [255,255,255,64],
+  "size": 12,
+  "angle": -30,
+  "xoffset": 0,
+  "yoffset": 0,
+  "type": "esriSMS",
+  "style": "esriSMSCircle",
+  "outline": {
+    "color": [0,0,0,255],
+    "width": 1,
+    "type": "esriSLS",
+    "style": "esriSLSSolid"
+  }
+});
       view.ui.add(track, "top-left");
       map.add(featureLayer);
+	view.ui.add(symbol);
 
       view.then(function() {
         track.start();
