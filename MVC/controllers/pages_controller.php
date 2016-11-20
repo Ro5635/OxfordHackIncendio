@@ -17,7 +17,7 @@
 
       $pageRequirements->add("title", 'Incendio');
 
-      $pageRequirements->add("js", ['assets/JS/js.js', 'assets/JS/homeScript.js'] );
+      $pageRequirements->add("js", ['assets/JS/js.js', 'assets/JS/homeScript.js', 'https://js.pusher.com/3.2/pusher.min.js'] );
 
 
 
