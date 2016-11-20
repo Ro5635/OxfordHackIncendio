@@ -7,7 +7,7 @@ $(document).ready(function(){
             type: "POST",
             data: datatoTransmit,
             cache: false,
-            success: function(reternedData) {
+            success: function(returnedData) {
                 window.location.href("/pages/map");
             }
         });
