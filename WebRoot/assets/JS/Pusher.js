@@ -1,5 +1,6 @@
 //js script
- <script>
+
+
 
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
@@ -10,6 +11,10 @@
 
     var channel = pusher.subscribe('test_channel');
     channel.bind('my_event', function(data) {
-      alert(data.message);
+    
+
+    	alert(data.message);
+    
+
+
     });
-  </script>
