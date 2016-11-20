@@ -32,9 +32,16 @@
  </style>
 
  <script>
-    $.get("getPlayers", function(data){
-      alert("Data: "+data);
-    });
+    $.ajax({
+            url: "/ajax/getPlayers",
+            type: "POST",
+            data: datatoTransmit,
+            cache: false,
+            success: function(reternedData) {
+                //Call back
+                //Reload page? redirect?.....?
+            }
+        });
  
    require([
          "esri/widgets/Track",
