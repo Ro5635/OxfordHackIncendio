@@ -40,7 +40,7 @@
       //Make an object of the pageLinkScriptsCSS class for storing the CSS requirements for the header:
       $pageRequirements = new pageLinkScriptsCSS();
 
-      $pageRequirements->add("css", ['https://js.arcgis.com/4.1/esri/css/main.css', '/SASS/stylesheets/Animate.css']);
+      $pageRequirements->add("css", ['https://js.arcgis.com/4.1/esri/css/main.css']);
 
       $pageRequirements->add("title", 'Map');
 
