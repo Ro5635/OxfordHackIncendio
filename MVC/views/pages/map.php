@@ -32,7 +32,7 @@
  </style>
 
  <script>
-    $(document).ready(function(){$.ajax({
+    function() {$.ajax({
 	url: "https://oxfordhack.webaddressgoeshere.com/ajax/getPlayers",
             type: "POST",
             data: datatoTransmit,
@@ -41,8 +41,8 @@
                 alert("Players:"+datatoTransmit);
             }
         });
-    });
- 
+	};
+
    require([
          "esri/widgets/Track",
        "esri/Map",
