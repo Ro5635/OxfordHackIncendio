@@ -9,6 +9,7 @@
 
 
 <div class="container-fluid">
+<<<<<<< HEAD
 
 
 
@@ -16,6 +17,9 @@
 
 
 
+=======
+	 <div class="row ">
+>>>>>>> 8d4a0f9804ba1d647c0ece038f421902b36e2fad
 <div class="card-deck-wrapper">
   <div class="card-deck">
     <div class="card">
@@ -38,8 +42,13 @@
     </div>
   </div>
 </div>
+<<<<<<< HEAD
 
 >
 </div>
 
 </div>
+=======
+</div>
+</div>
+>>>>>>> 8d4a0f9804ba1d647c0ece038f421902b36e2fad

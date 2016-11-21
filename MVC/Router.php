@@ -1,6 +1,10 @@
 <?php
   //All of the controllers and there associated actions:
+<<<<<<< HEAD
   $controllers = array('pages' => ['home', 'map', 'error', 'spells'], 'ajax' => ['register','getPlayers', 'getCurrentPlayer'] , 'header' => ['std', 'error'] , 'footer' => ['std', 'error'] );
+=======
+  $controllers = array('pages' => ['home', 'map', 'spells' , 'error'], 'ajax' => ['register','getPlayers', 'getCurrentPlayer'] , 'header' => ['std', 'error'] , 'footer' => ['std', 'error'] );
+>>>>>>> 8d4a0f9804ba1d647c0ece038f421902b36e2fad
 
   if (array_key_exists($controller, $controllers)) {
 
