@@ -10,6 +10,19 @@ include($_SERVER['DOCUMENT_ROOT'].'/../PHPIncludes/Views/pages/home/INC_TopPageG
 
 
 ?>
+
+<nav class="navbar navbar-light bg-faded">
+  <div class="nav navbar-nav">
+    <a class="navbar-brand" href="#">Play Lumos</a>
+    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link" href="/pages/spells">Spells</a>
+    <a class="nav-item nav-link" href="/pages/map">Map</a>
+  </div>
+</nav>
+<br><br><br>
+
+
+
         <div class='container'>
             <div class="row">
                 <div class="container-fluid">

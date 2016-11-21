@@ -65,12 +65,12 @@ var featureLayer = new FeatureLayer({
 /********************
         * Add feature layer
         ********************/        
-Carbon storage of trees in Warren Wilson College.
+//Carbon storage of trees in Warren Wilson College.
     var track = new Track({
       view: view,
       graphic: new Graphic({
       symbol: new PictureMarkerSymbol()
-    });      
+    })      
       }); 
      
      view.ui.add(track, "top-left");

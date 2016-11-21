@@ -17,7 +17,7 @@
 
       $pageRequirements->add("title", 'Incendio');
 
-      $pageRequirements->add("js", ['/assets/JS/Pusher.js', '/assets/JS/homeScript.js'] );
+      $pageRequirements->add("js", ['/assets/JS/Pusher.js', '/assets/JS/homeScript.js', '/assets/JS/speak.js', 'https://code.responsivevoice.org/responsivevoice.js'] );
 
 
 
@@ -48,15 +48,46 @@
       $pageRequirements->add("js", ['https://js.arcgis.com/4.1/',  'https://js.pusher.com/3.2/pusher.min.js', 'https://ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js', '/assets/JS/js.js', 'assets/JS/jsMap.js' , '/assets/JS/Pusher.js'] );
 
 
-      callStructural('header','std',$pageRequirements);
+//      callStructural('header','std',$pageRequirements);
       
       require_once('views/pages/map.php');
+
+      //Render the page footer:
+  //    callStructural("footer", 'std', $pageRequirements); 
+
+
+    }
+
+
+
+     public function spells() {
+      
+
+      //Require the class for storing CSS and Script requirements:
+     require_once($_SERVER['DOCUMENT_ROOT'] . '../PHPIncludes/pageLinkScriptsCSS.php');
+
+      //Make an object of the pageLinkScriptsCSS class for storing the CSS requirements for the header:
+      $pageRequirements = new pageLinkScriptsCSS();
+
+      $pageRequirements->add("css", ['https://js.arcgis.com/4.1/esri/css/main.css']);
+
+      $pageRequirements->add("title", 'Map');
+
+      $pageRequirements->add("js", ['https://js.arcgis.com/4.1/',  'https://js.pusher.com/3.2/pusher.min.js', 'https://ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js', '/assets/JS/js.js', 'assets/JS/jsMap.js' , '/assets/JS/Pusher.js'] );
+
+
+      callStructural('header','std',$pageRequirements);
+      
+      require_once('views/pages/Spells.php');
 
       //Render the page footer:
       callStructural("footer", 'std', $pageRequirements); 
 
 
     }
+
+
+
 
     public function error() {
 
